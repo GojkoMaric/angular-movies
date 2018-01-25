@@ -1,0 +1,13 @@
+<ul>
+  <li>Movie name: {{movie.name}}</li>
+  <li>Director: {{movie.director}}</li>
+  <li>{{movie.imageUrl}}</li>
+  <li>Duration: {{movie.duration}}</li>
+  <li>Release date: {{movie.releaseDate}}</li>
+  <li>Genres:
+    <ul *ngFor='let genre of movie.genres'>
+      <li>{{genre}}</li>
+    </ul>
+  </li>
+</ul>
+<hr>

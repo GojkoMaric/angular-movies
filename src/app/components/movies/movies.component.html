@@ -1,14 +1,13 @@
 <table class='table'>
+  <h3>List of movies</h3>
   <thead>
     <tr>
       <td>Name</td>
-      <td>Director</td>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor='let movie of movies'>
-      <td>{{movie.name}}</td>
-      <td>{{movie.director}}</td>
+    <tr *ngFor='let movie of movies'
+    [movieRow]='movie'>
     </tr>
   </tbody>
 </table>
