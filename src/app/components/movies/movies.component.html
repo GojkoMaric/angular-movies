@@ -1,3 +1,14 @@
-<p>
-  movies works!
-</p>
+<table class='table'>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Director</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let movie of movies'>
+      <td>{{movie.name}}</td>
+      <td>{{movie.director}}</td>
+    </tr>
+  </tbody>
+</table>

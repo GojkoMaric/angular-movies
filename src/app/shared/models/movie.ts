@@ -6,7 +6,7 @@ export class Movie {
         private director?: string,
         private imageUrl?: string,
         private duration?: number,
-        private releaseDate?: Date,
+        private releaseDate?: string,
         private genres?: [string]
     ){ }
 }
