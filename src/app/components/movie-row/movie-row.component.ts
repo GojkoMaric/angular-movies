@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Movie } from '../../shared/models/movie';
 
 @Component({
@@ -8,15 +8,23 @@ import { Movie } from '../../shared/models/movie';
 })
 export class MovieRowComponent implements OnInit {
   private movie: Movie;
+  private voted = false;
 
   @Input()
   set movieRow(movie: Movie){
     this.movie = movie;
   }
 
+  @Output() onVoted = new EventEmitter<boolean>();
+
   constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
+  }
+
+  public selectMovie(agreed){
+    this.voted = true;
+    this.onVoted.emit(agreed);
   }
 
 }

@@ -1,13 +1,8 @@
-<table class='table'>
+<div class='container'>
   <h3>List of movies</h3>
-  <thead>
-    <tr>
-      <td>Name</td>
-    </tr>
-  </thead>
-  <tbody>
+  <p>You have selected: {{counter}} movies</p>
     <tr *ngFor='let movie of movies'
-    [movieRow]='movie'>
+    [movieRow]='movie'
+    (onVoted)='onVoted($event)'>
     </tr>
-  </tbody>
-</table>
+</div>

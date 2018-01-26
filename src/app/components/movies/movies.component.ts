@@ -8,6 +8,7 @@ import { MovieService } from '../../shared/services/movie.service';
 })
 export class MoviesComponent implements OnInit {
   private movies: any[] = [];
+  public counter = 0;
 
   constructor(private _movieService: MovieService ) {
 
@@ -19,6 +20,10 @@ export class MoviesComponent implements OnInit {
         this.movies = data;
       }
     )
+  }
+
+  public onVoted(agreed: boolean){
+    this.counter++;
   }
 
 }
