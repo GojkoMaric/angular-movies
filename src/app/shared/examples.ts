@@ -26,4 +26,22 @@ export const movies = [
         releaseDate: '03-03-03',
         genres: ['comedy', 'action']
     },
+    {
+        id: 4,
+        name: 'Terminator',
+        director: 'Director 4',
+        imageUrl: 'http//img4.com',
+        duration: 132,
+        releaseDate: '03-03-03',
+        genres: ['action']
+    },  
+    {
+        id: 5,
+        name: 'Home alone',
+        director: 'Director 4',
+        imageUrl: 'http//img4.com',
+        duration: 92,
+        releaseDate: '03-03-03',
+        genres: ['comedy']
+    },
 ]

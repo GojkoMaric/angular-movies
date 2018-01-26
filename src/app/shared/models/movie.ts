@@ -2,7 +2,7 @@ export class Movie {
 
     constructor (
         private id?: string,
-        private name?: string,
+        public name?: string,
         private director?: string,
         private imageUrl?: string,
         private duration?: number,

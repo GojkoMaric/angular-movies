@@ -10,6 +10,7 @@ import { SharedModule } from './shared/shared.module';
 import { MovieRowComponent } from './components/movie-row/movie-row.component';
 import { SearchComponent } from './components/search/search.component';
 import { FormsModule } from '@angular/forms';
+import { SearchPageComponent } from './components/search-page/search-page.component';
 
 const appRoutes: Routes = [
   {
@@ -23,7 +24,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'search/:term',
-    component: MoviesComponent
+    component: SearchPageComponent
   }
 ]
 
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
     LayoutComponent,
     MoviesComponent,
     MovieRowComponent,
-    SearchComponent
+    SearchComponent,
+    SearchPageComponent
   ],
   imports: [
     BrowserModule,
