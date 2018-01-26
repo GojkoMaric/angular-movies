@@ -1,3 +1,4 @@
-<p>
-  search-page works!
-</p>
+<h3>Searched term: <b>{{term}}</b></h3>
+<h2>List of movies:</h2>
+<ul *ngFor='let movie of movies' [movieRow]='movie'>
+</ul>
