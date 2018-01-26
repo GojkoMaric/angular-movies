@@ -53,4 +53,13 @@ export const movies = [
         releaseDate: '03-03-03',
         genres: ['comedy']
     },
+    {
+        id: 7,
+        name: 'Home alone 2',
+        director: 'Director 7',
+        imageUrl: 'http//img7.com',
+        duration: 88,
+        releaseDate: '07-07-07',
+        genres: ['comedy']
+    },
 ]
