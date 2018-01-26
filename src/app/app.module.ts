@@ -11,6 +11,7 @@ import { MovieRowComponent } from './components/movie-row/movie-row.component';
 import { SearchComponent } from './components/search/search.component';
 import { FormsModule } from '@angular/forms';
 import { SearchPageComponent } from './components/search-page/search-page.component';
+import { OrderModule } from 'ngx-order-pipe';
 
 const appRoutes: Routes = [
   {
@@ -43,7 +44,8 @@ const appRoutes: Routes = [
       appRoutes
     ),
     SharedModule,
-    FormsModule
+    FormsModule,
+    OrderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

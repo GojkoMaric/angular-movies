@@ -6,7 +6,10 @@
   
   <button (click)='selectedAll = false; selectedAny = false' (click)='deselectAll()'>Deselect all</button>
  
-  <tr *ngFor='let movie of movies'
+  <button [class.active]='order === "name"' (click)='setOrder("name")'>Sort by name</button>
+  <button [class.active]='order === "duration"' (click)='setOrder("duration")'>Sort by duration</button>
+
+  <tr *ngFor='let movie of movies | orderBy: order : reverse'
   [movieRow]='movie'
   (onVoted)='onVoted($event)'
   [selectedAny]='selectedAny'

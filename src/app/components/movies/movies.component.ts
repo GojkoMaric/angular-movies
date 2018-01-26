@@ -11,6 +11,8 @@ export class MoviesComponent implements OnInit {
   public counter = 0;
   public selectedAll = false;
   public selectedAny = false;
+  public order = 'name';
+  public reverse = false;
 
   constructor(private _movieService: MovieService ) {
 
@@ -35,6 +37,13 @@ export class MoviesComponent implements OnInit {
 
   deselectAll(){
     this.counter = 0;
+  }
+
+  public setOrder(value: string){
+    if(this.order === value){
+      this.reverse = !this.reverse;
+    }
+    this.order = value;
   }
 
 }

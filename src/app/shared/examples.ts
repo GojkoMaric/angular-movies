@@ -13,7 +13,7 @@ export const movies = [
         name: 'Movie 2',
         director: 'Director 2',
         imageUrl: 'http//img2.com',
-        duration: 106,
+        duration: 121,
         releaseDate: '02-02-02',
         genres: ['comedy', 'drama']
     },
@@ -22,7 +22,7 @@ export const movies = [
         name: 'Movie 3',
         director: 'Director 3',
         imageUrl: 'http//img3.com',
-        duration: 121,
+        duration: 106,
         releaseDate: '03-03-03',
         genres: ['comedy', 'action']
     },
@@ -38,9 +38,18 @@ export const movies = [
     {
         id: 5,
         name: 'Home alone',
-        director: 'Director 4',
-        imageUrl: 'http//img4.com',
+        director: 'Director 5',
+        imageUrl: 'http//img5.com',
         duration: 92,
+        releaseDate: '05-05-05',
+        genres: ['comedy']
+    },
+    {
+        id: 6,
+        name: 'American pie',
+        director: 'Director 6',
+        imageUrl: 'http//img4.com',
+        duration: 72,
         releaseDate: '03-03-03',
         genres: ['comedy']
     },
