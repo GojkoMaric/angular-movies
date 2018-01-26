@@ -1,8 +1,16 @@
 <div class='container'>
   <h3>List of movies</h3>
   <p>You have selected: {{counter}} movies</p>
-    <tr *ngFor='let movie of movies'
-    [movieRow]='movie'
-    (onVoted)='onVoted($event)'>
-    </tr>
+
+  <button (click)='selectedAll = true' (click)='selectAll()'>Select all</button>
+  
+  <button (click)='selectedAll = false; selectedAny = false' (click)='deselectAll()'>Deselect all</button>
+ 
+  <tr *ngFor='let movie of movies'
+  [movieRow]='movie'
+  (onVoted)='onVoted($event)'
+  [selectedAny]='selectedAny'
+  [selectedAll]='selectedAll'>
+  </tr>
+
 </div>
